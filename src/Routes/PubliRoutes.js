@@ -18,6 +18,9 @@ import HeightDelhi from '../Pages/HeightDelhi.js';
 import HeightMumbai from '../Pages/HeightMumbai.js';
 import Circulars from '../Pages/Circulars.js';
 import Geo from '../Pages/Geo.js';
+import NMALogin from '../Pages/NMALogin.js';
+import CALogin from '../Pages/CALogin.js';
+import SALogin from '../Pages/SALogin.js';
 const PublicRoutes =()=>{
     
     return (
@@ -42,10 +45,10 @@ const PublicRoutes =()=>{
         </Route>  
         <Route path="/Auth" element ={ <AuthLayout/>}>         
             <Route path='Applicantlogin' element={<ApplicantLogin/>}/>
-            <Route path="CALogin" element ={<>CA Login page....!</>}/>
-            <Route path="SALogin" element ={<>SA Login page.!</>}/>
+            <Route path="CALogin" element ={<CALogin/>}/>
+            <Route path="SALogin" element ={<SALogin/>}/>
             <Route path="Registration" element ={ <Registration/>}/>
-            <Route path="NMALogin" element ={ <>NMA Login page....!</>}/>
+            <Route path="NMALogin" element ={<NMALogin/>}/>
        </Route> 
       </Routes>
       </BrowserRouter>

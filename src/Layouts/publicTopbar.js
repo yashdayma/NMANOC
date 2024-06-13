@@ -14,27 +14,27 @@ const objtop=[
     },
     {
          linkName: 'SA Login',
-         linkurl: '/Autht/SALogin',        
+         linkurl: '/Auth/SALogin',        
          visibility: ["Applicant",'CA','NMA']
     },
     {
          linkName: 'CA Login',
-         linkurl: '/Autht/CALogin',        
+         linkurl: '/Auth/CALogin',        
          visibility: ["Applicant",'CA','NMA']
     },
     {
          linkName: 'NMA Login',
-         linkurl: '/Autht/NMALogin',        
+         linkurl: '/Auth/NMALogin',        
          visibility: ["Applicant",'CA','NMA']
     }
 ]
 const PublicTopbar=()=>{
     return (       
-              <div className="flex topbar w-screen h-15 place-content-end px-2">
-                {objtop.filter((topItem)=>{return topItem.visibility.includes('NMA','CA')}).map((topItem)=>
+              <div className="topbar flex w-screen h-4 place-content-end px-2  ">
+                {objtop.filter((topItem)=>{return topItem.visibility.includes('NMA','CA','Applicant')}).map((topItem)=>
                     { return (
                         <Link to ={topItem.linkurl}>
-                            <div className="topbar  p-3 hover:bg-red-200 rounded-md underline-offset-2 text-bold">
+                            <div className="topbar p-3 hover:bg-red-200 rounded-md font-bold grid place-items-center  ">
                                 <div className="icon w-6 p-1 "> {topItem.linkIcon} </div>
                                 <div className=" link text-s ">{topItem.linkName} </div>
                             </div>
