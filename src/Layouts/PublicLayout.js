@@ -8,20 +8,22 @@ import sarnath from './Dashboard/sarnath.jpg'
 
 const PublicLayout=()=>(
   <div className="PublicLayout flex flex-col h-screen mx-auto bg-blue-200 ">
-    <header class="header flex h-24  bg-blue-500">
+    <header class="header  flex h-24 bg-blue-500">
       <div className=" w-[500px] h-full "> <img src={logo} alt="logo" /> </div>
-      <div class="flex place-content-end w-full h-full justify-end">
-        <div className="w-[150px] "> <img src={sarnath} alt="sarnath" /> </div>
-        <div className="w-[160px] "> <img src={ajanta} alt="ajanta" /> </div>
+      <div class="flex place-content-end w-full justify-end">
+        <div className="w-[150px] h-full"> <img src={sarnath} alt="sarnath" /> </div>
+        <div className="w-[150px] h-full"> <img src={ajanta} alt="ajanta" /> </div>
       </div>
     </header>
-    <marquee className="marquee w-screen h-[20px] bg-yellow-200 text-red-600 decoration-8 font-bold ">
+    <div>
+       <marquee className="marquee w-screen h-[24px] bg-yellow-200 text-red-600 decoration-8 font-bold ">
       Traversal of wrong plot by the Architect/Applicant either by omission or comission or by
       "mistake" will attract penal action / black listing.
     </marquee>
-         <PublicTopbar/>
-    <topbar className="topbar bg-white mt-8">
+    <topbar className="  bg-white  "> <PublicTopbar/>
         </topbar>
+    </div>
+    
     <section className="mainContent flex grow bg-green-200  ">
       <sidebar className="sidebar w-1/6 bg-orange-500 ">
         <div className="publicnavbar">

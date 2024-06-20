@@ -30,11 +30,11 @@ const objtop=[
 ]
 const PublicTopbar=()=>{
     return (       
-              <div className="topbar flex w-screen h-4 place-content-end px-2  ">
+              <div className="topbar flex w-screen h-full place-content-end px-4 bg-white ">
                 {objtop.filter((topItem)=>{return topItem.visibility.includes('NMA','CA','Applicant')}).map((topItem)=>
                     { return (
                         <Link to ={topItem.linkurl}>
-                            <div className="topbar p-3 hover:bg-red-200 rounded-md font-bold grid place-items-center  ">
+                            <div className="topbar p-2 hover:bg-red-200 rounded-md font-bold grid place-items-center  ">
                                 <div className="icon w-6 p-1 "> {topItem.linkIcon} </div>
                                 <div className=" link text-s ">{topItem.linkName} </div>
                             </div>
