@@ -3,15 +3,10 @@ import { Link } from "react-router-dom";
 const Geo=()=>{
     return (
         
-        <Link to="/form1">
-          <div className="w-full h-1/2 text-wrap"> qwertyuioplk,mjnhbgvfdsadrtfguyjhknb fdrygujhbgf brtcjygh ytfyghb
+          <a href="https://gsdl.org.in/ease_of_doing/index.aspx" target="_blank" rel="noopener noreferrer">        
+        </a>
          
-                </div>
-       </Link>
-          
       
-      
-
     )
 }
 

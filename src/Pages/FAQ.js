@@ -5,7 +5,7 @@ const Faq=()=>{
 
        <div className="p-2"> 
          <div className=" font-bold text-3xl">
-            FAQ  
+            FAQ (Frequently Asked Questions)
          </div>
          <div className=" hover:border-2 hover:border-red-700 ">
 

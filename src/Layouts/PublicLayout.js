@@ -17,8 +17,8 @@ const PublicLayout=()=>(
     </header>
     <div>
        <marquee className="marquee w-screen h-[24px] bg-yellow-200 text-red-600 decoration-8 font-bold ">
-      Traversal of wrong plot by the Architect/Applicant either by omission or comission or by
-      "mistake" will attract penal action / black listing.
+          Traversal of wrong plot by the Architect/Applicant either by omission or comission or by
+          "mistake" will attract penal action / black listing.
     </marquee>
     <topbar className="  bg-white  "> <PublicTopbar/>
         </topbar>
